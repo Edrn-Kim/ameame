@@ -42,18 +42,18 @@
     }
 
     .avatar {
-      width: 88px;
-      height: 88px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #e8e0d8 0%, #d4c9bc 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      letter-spacing: -1px;
-      color: #7a6b5d;
-      font-weight: 500;
+      overflow: hidden;
       box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      background: #eeeae5;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .brand-name {
@@ -182,9 +182,9 @@
   <div class="container">
 
     <div class="profile">
-      <div class="avatar">아메</div>
+      <div class="avatar"><img src="logo.png" alt="아메아메 로고" /></div>
       <div class="brand-name">아메아메</div>
-      <div class="bio">당신의 일상을 더 예쁘게</div>
+      <div class="bio">🌧️ 취향이 담긴 도자기 그릇들</div>
     </div>
 
     <div class="links">
@@ -192,12 +192,12 @@
       <!-- 네이버 스마트스토어 -->
       <a class="link-btn" href="http://smartstore.naver.com/edern_" target="_blank" rel="noopener">
         <div class="btn-icon naver">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <path d="M13.37 12.38L10.43 8H8v8h2.63l2.94-4.38V16H16V8h-2.63v4.38z" fill="white"/>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4H13.14L11.5 7.2L9.86 4H7V20H9.86V11.6L11.5 14.8L13.14 11.6V20H16V4Z" fill="white"/>
           </svg>
         </div>
         <div class="btn-text">
-          <span class="btn-label">스마트스토어</span>
+          <span class="btn-label">네이버 스마트스토어</span>
           <span class="btn-sub">아메아메 공식 쇼핑몰</span>
         </div>
         <span class="btn-arrow">›</span>
@@ -212,8 +212,8 @@
           </svg>
         </div>
         <div class="btn-text">
-          <span class="btn-label">노션 페이지</span>
-          <span class="btn-sub">브랜드 소개 &amp; 정보</span>
+          <span class="btn-label">주문 / 배송 안내</span>
+          <span class="btn-sub">주문 방법 및 배송 정보</span>
         </div>
         <span class="btn-arrow">›</span>
       </a>
