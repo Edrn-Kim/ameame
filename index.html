@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>아메아메</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #fafafa;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* 프로필 영역 */
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e8e0d8 0%, #d4c9bc 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      letter-spacing: -1px;
+      color: #7a6b5d;
+      font-weight: 500;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    }
+
+    .brand-name {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: 0.5px;
+    }
+
+    .bio {
+      font-size: 13px;
+      color: #888;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* 링크 버튼들 */
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 22px;
+      background: #ffffff;
+      border: 1px solid #ebebeb;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: 'Noto Sans KR', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    }
+
+    .link-btn:hover {
+      background: #f4f4f4;
+      border-color: #d8d8d8;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .link-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .btn-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 18px;
+    }
+
+    .btn-icon.naver {
+      background: #03c75a;
+    }
+
+    .btn-icon.notion {
+      background: #1a1a1a;
+    }
+
+    .btn-text {
+      flex: 1;
+    }
+
+    .btn-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1a1a1a;
+      display: block;
+    }
+
+    .btn-sub {
+      font-size: 11px;
+      color: #aaa;
+      font-weight: 300;
+      display: block;
+      margin-top: 1px;
+    }
+
+    .btn-arrow {
+      font-size: 14px;
+      color: #ccc;
+      flex-shrink: 0;
+    }
+
+    /* 구분선 */
+    .divider {
+      width: 32px;
+      height: 1px;
+      background: #e8e8e8;
+      margin: 8px 0;
+    }
+
+    /* 푸터 */
+    .footer {
+      margin-top: 40px;
+      font-size: 11px;
+      color: #ccc;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+
+    /* SVG 아이콘 */
+    svg {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="profile">
+      <div class="avatar">아메</div>
+      <div class="brand-name">아메아메</div>
+      <div class="bio">당신의 일상을 더 예쁘게</div>
+    </div>
+
+    <div class="links">
+
+      <!-- 네이버 스마트스토어 -->
+      <a class="link-btn" href="http://smartstore.naver.com/edern_" target="_blank" rel="noopener">
+        <div class="btn-icon naver">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M13.37 12.38L10.43 8H8v8h2.63l2.94-4.38V16H16V8h-2.63v4.38z" fill="white"/>
+          </svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">스마트스토어</span>
+          <span class="btn-sub">아메아메 공식 쇼핑몰</span>
+        </div>
+        <span class="btn-arrow">›</span>
+      </a>
+
+      <!-- 노션 페이지 -->
+      <a class="link-btn" href="https://scarce-handle-2c2.notion.site/37b3010dc93d8003b3dfc6aa47f02a5b?source=copy_link" target="_blank" rel="noopener">
+        <div class="btn-icon notion">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4.5C4 3.12 5.12 2 6.5 2h8.086a1.5 1.5 0 0 1 1.06.44l2.915 2.914A1.5 1.5 0 0 1 19 6.414V19.5A1.5 1.5 0 0 1 17.5 21h-11A1.5 1.5 0 0 1 5 19.5v-15z" fill="white" opacity="0.15"/>
+            <path d="M7 9h10M7 13h10M7 17h6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">노션 페이지</span>
+          <span class="btn-sub">브랜드 소개 &amp; 정보</span>
+        </div>
+        <span class="btn-arrow">›</span>
+      </a>
+
+    </div>
+
+    <div class="footer">© 아메아메</div>
+  </div>
+</body>
+</html>
